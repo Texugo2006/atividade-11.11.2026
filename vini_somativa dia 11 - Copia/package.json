@@ -1,0 +1,23 @@
+{
+  "name": "petshop-app-tests",
+  "version": "1.0.0",
+  "description": "Testes automatizados E2E com Cypress para o aplicativo Web Pet Shop Patas & Pelos (Digital Horizon)",
+  "scripts": {
+    "server": "json-server --watch db.json --port 3000",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "e2e",
+    "flutter-web",
+    "testing",
+    "json-server"
+  ],
+  "author": "Equipe Digital Horizon",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.15.0"
+  }
+}

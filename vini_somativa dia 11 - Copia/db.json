@@ -1,0 +1,97 @@
+{
+  "products": [
+    {
+      "id": "p2",
+      "name": "Brinquedo Interativo para Gatos",
+      "price": 24.9,
+      "imageUrl": "https://images.unsplash.com/photo-1545249390-6bdfa286032f?w=400",
+      "breed": "Gatos",
+      "brand": "PetFun"
+    },
+    {
+      "id": "p4",
+      "name": "Cama Ortopédica Acolchoada",
+      "price": 89.9,
+      "imageUrl": "https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?w=400",
+      "breed": "Médio e Grande porte",
+      "brand": "SleepyPet"
+    },
+    {
+      "id": "p7",
+      "name": "Sachê Gourmet Carne para Gatos (85g)",
+      "price": 3.8,
+      "imageUrl": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400",
+      "breed": "Gatos Adultos",
+      "brand": "Whiskas"
+    },
+    {
+      "id": "p10",
+      "name": "Areia Higiênica de Sílica (1.8kg)",
+      "price": 36.9,
+      "imageUrl": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400",
+      "breed": "Gatos",
+      "brand": "Chalesco"
+    },
+    {
+      "id": "axT_Vq1LAfQ",
+      "name": "Bastão Mordedor Natural para Gato – Alívio do Estresse e Saúde Bucal Bastão Mordedor Natural",
+      "price": 30,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRygICloi_SoYm2JPmPSwGlvrtt8T2_vLZ45V_uTf5qRA&s=10",
+      "breed": "Todas",
+      "brand": "Royal Canin"
+    },
+    {
+      "id": "7rWjDvnFhPY",
+      "name": "Bastão Mordedor Natural para Gato – Alívio do Estresse e Saúde Bucal Bastão Mordedor Natural",
+      "price": 35,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRygICloi_SoYm2JPmPSwGlvrtt8T2_vLZ45V_uTf5qRA&s=10",
+      "breed": "Todas",
+      "brand": "Royal Canin"
+    }
+  ],
+  "services": [
+    {
+      "id": "s1",
+      "name": "Banho & Tosa Higiênica Completo",
+      "price": 65,
+      "description": "Inclui corte de unhas, limpeza de ouvidos, hidratação e tosa higiênica.",
+      "duration": "1h 30min"
+    },
+    {
+      "id": "s2",
+      "name": "Consulta Veterinária Preventiva",
+      "price": 90,
+      "description": "Avaliação clínica geral com médico veterinário credenciado.",
+      "duration": "45min"
+    },
+    {
+      "id": "s3",
+      "name": "Aplicação de Vacina V10 / Antirrábica",
+      "price": 75,
+      "description": "Imunização completa com emissão de carteirinha de vacinação.",
+      "duration": "20min"
+    },
+    {
+      "id": "s4",
+      "name": "Day Care & Hotelzinho Pet",
+      "price": 50,
+      "description": "Diária com recreação monitorada, piscina e espaço verde amplo.",
+      "duration": "Diária"
+    }
+  ],
+  "promotions": [
+    {
+      "id": "promo1",
+      "title": "15% OFF na Primeira Tosa",
+      "description": "Agende pelo app e ganhe 15% de desconto no primeiro banho e tosa.",
+      "coupon": "BEMVINDO15"
+    },
+    {
+      "id": "promo2",
+      "title": "Combo Ração + Petisco",
+      "description": "Na compra de qualquer ração acima de 5kg, ganhe 1 pacote de petisco dental.",
+      "coupon": "PETDELICIA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
