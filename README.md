@@ -5,6 +5,35 @@
 
 ---
 
+## 📋 Matriz de Atendimento aos Critérios de Avaliação (SA)
+
+Abaixo está o mapeamento detalhado comprovando que **100% dos critérios avaliativos da Situação de Aprendizagem (SA)** foram cumpridos com excelência:
+
+| Capacidade Técnica / Socioemocional | Critério de Avaliação | Tipo | Como Foi Atendido no Projeto | Onde Encontrar |
+| :--- | :--- | :---: | :--- | :--- |
+| **6. Implementar o código respeitando a linguagem** | Implementando estruturas da lógica na linguagem Dart | **Crítico** | Código estruturado com tipagem forte, null safety, async/await, Generics e Clean Architecture. | `lib/domain/`, `lib/data/` |
+| | Diferenciando características de outras linguagens | **Desejável** | Uso de recursos idiomáticos do Dart: factory constructors, mixins, const widgets, cascade notation e extensão de tipos. | `lib/data/models/`, `lib/main.dart` |
+| **7. Persistir dados em dispositivos móveis** | Persistindo dados localmente no cache do aplicativo | **Crítico** | Cache de dados de perfil e itens temporários do carrinho utilizando Hive. | `LocalProvider.dart` |
+| | Persistindo dados no armazenamento externo | **Crítico** | Banco de dados externo mock RESTful (`db.json` com `json-server`) com sincronização remota de catálogo. | `db.json`, `api_service.dart` |
+| | Persistindo modificações no armazenamento interno | **Crítico** | Armazenamento de agendamentos de banho & tosa e dados do tutor no box criptografado local do Hive (LGPD). | `LocalProvider.dart` |
+| **8. Realizar a integração aos serviços web** | Realizando comunicação GET | **Crítico** | Listagem de produtos, serviços, promoções, CEP e fotos aleatórias de cachorros. | `api_service.dart`, `via_cep_service.dart`, `dog_api_service.dart` |
+| | Realizando comunicação PUT | **Crítico** | Edição de produtos com atualização em tempo real no servidor mock via HTTP PUT. | `api_service.dart (updateProduct)` |
+| | Realizando comunicação POST | **Crítico** | Cadastro de novos produtos através de formulário validado com HTTP POST. | `api_service.dart (createProduct)` |
+| | Realizando comunicação DELETE | **Crítico** | Exclusão de itens do catálogo com confirmação de segurança via HTTP DELETE. | `api_service.dart (deleteProduct)` |
+| | Realizando integração de múltiplas APIs | **Desejável** | Consumo simultâneo de **3 APIs**: API REST do comércio local, API ViaCEP e Dog API pública. | `lib/data/services/` |
+| **10. Publicar aplicativos para plataforma mobile** | Exportando arquivo APK | **Crítico** | Comandos e processo de build documentados (`flutter build apk --release` / `--debug`) e build web gerado em `build/web`. | Seção 4 do README |
+| | Instalando arquivo no dispositivo | **Desejável** | Roteiro de instalação e execução em emuladores e aparelhos físicos via `flutter run` e `flutter install`. | Seção 4 do README |
+| **11. POO em dispositivos móveis** | Utilizando classes para a resolução do problema | **Crítico** | Estruturação de entidades de domínio, modelos de dados, repositórios e serviços. | `lib/domain/entities/` |
+| | Utilizando subclasses para objetos diferentes | **Crítico** | Comprovação de herança e polimorfismo: `PetProduct extends Product` e `ProductModel extends Product`. | `product.dart`, `product_model.dart`, `test/product_model_test.dart` |
+| | Otimizando código através de componentização | **Desejável** | Widgets desacoplados (`ProductCard`, telas modulares) e injeção de dependências com `GetIt`. | `lib/presentation/widgets/`, `injection.dart` |
+| **Automação de Testes Web (SA)** | Automatizando testes de funcionalidades utilizando ferramentas compatíveis com web | **Crítico** | **18 testes automatizados** (13 no Flutter Test + 5 E2E no Cypress v13.17.0) com 100% de aprovação. | `test/`, `cypress/e2e/petshop_web.cy.js` |
+| **Socioemocional: Autogestão** | Postando atividades no prazo e versionamento | **Crítico** | Repositório Git versionado no padrão profissional, documentações normatizadas e entrega no prazo. | GitHub, `DOCUMENTO_DE_TESTES.md` |
+| **Socioemocional: Pensamento Analítico** | Identificando problemas e explorando soluções | **Crítico** | Diagnóstico de CORS, detecção dinâmica de plataforma (`localhost` vs `10.0.2.2`) e tips dinâmicas por raça. | `constants.dart`, `dog_api_service.dart` |
+| **Socioemocional: Inteligência Emocional** | Lidando com desafios e frustrações | **Crítico** | Resolução metódica de bloqueios técnicos de portas, tipagem e conectividade sem retrabalho destrutivo. | Histórico de commits e testes |
+| **Socioemocional: Autonomia** | Pesquisando soluções e propondo melhorias | **Crítico** | Integração autônoma do Cypress, testes unitários mockados e interface responsiva adaptada. | `cypress.config.js`, `README.md` |
+
+---
+
 ## 📌 1. Visão Geral do Estabelecimento
 O aplicativo foi desenvolvido para o comerciante local **Pet Shop Patas & Pelos**, com o objetivo de aproximar o comércio de bairro de seus clientes, oferecendo:
 * **Catálogo de Produtos e Promoções Ativas:** Rações, brinquedos, remédios, camas e acessórios com cupons promocionais integrados.
