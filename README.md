@@ -290,3 +290,5 @@ cypress.config.js              # Configuração oficial do Cypress
 package.json                   # Dependências e scripts de execução do Cypress e mock
 db.json                        # Banco de dados externo mock (produtos, serviços, promoções)
 ```
+#   a t i v i d a d e - 1 1 . 1 1 . 2 0 2 6  
+ 
